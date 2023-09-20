@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="theme">#5828BA</color>
+    <color name="circle">#FF7B8A</color>
+    <color name="rectangle_btn">#781D27</color>
+    <color name="length_theme">#C5F8AF</color>
+    <color name="day">#7CB342</color>
+    <color name="bg_heading">#FDD835</color>
+    <color name="month">#F5CD23</color>
+    <color name="btn">#1F5A54</color>
+    <color name="temp_theme">#F8D1AF</color>
+    <color name="weight_theme">#E2AFF8</color>
+    <color name="time_theme">#F8AFE8</color>
+    <color name="area_theme">#ABF5FF</color>
+    <color name="volume_theme">#1988BD</color>
+    <color name="tz_theme">#C2AD93</color>
+    <color name="currency_theme">#B8B6B6</color>
+    <color name="bmi">#FFF1B3</color>
+    <color name="gradient1">#1F6BAE</color>
+    <color name="gradient2">#2E31AA</color>
+    <color name="gradient3">#3B1C78</color>
+    <color name="circle1">#4C9ADF</color>
+    <color name="circle2">#5E3BA6</color>
+    <color name="birthday">#FFD9B1</color>
+    <color name="frienship1">#7E0A0A</color>
+    <color name="frienship2">#CC7200</color>
+    <color name="circle3">#E4BB03</color>
+    <color name="circle4">#F64007</color>
+</resources>

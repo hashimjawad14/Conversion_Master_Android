@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Friendship_Calculator3"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="330dp"
+        android:layout_height="300dp"
+        app:lottie_rawRes="@raw/fight_anim"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_margin="20dp">
+
+    </com.airbnb.lottie.LottieAnimationView>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/percentage"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textColor="#FF241F"
+        android:textSize="70sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:text="You a lower level of compatibility. There are relatively fewer commonalities in your traits, potentially indicating a weaker potential for a strong or close friendship. Building a deeper connection may require further interaction to discover shared interests."/>
+
+</LinearLayout>

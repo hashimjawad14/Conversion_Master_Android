@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/convert_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/convert_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Conversion_Master"
+        tools:targetApi="31">
+        <activity
+            android:name=".Friendship_Calculator5"
+            android:exported="false" />
+        <activity
+            android:name=".Friendship_Calculator4"
+            android:exported="false" />
+        <activity
+            android:name=".Friendship_Calculator3"
+            android:exported="false" />
+        <activity
+            android:name=".Friendship_Calculator2"
+            android:exported="false" />
+        <activity
+            android:name=".Age_Calculator2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Age_Calculator1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Splash"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Bmi_overweight"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Bmi_normal"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Bmi_underweight"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Age_Calculator"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Time_Converter"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TimeZone_Converter"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Volume_Converter"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Area_Converter"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BMI_Calculator"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Currency_Converter"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Friendship_Calculator"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Weight_Converter"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Length_Converter"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Temp_Converter"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

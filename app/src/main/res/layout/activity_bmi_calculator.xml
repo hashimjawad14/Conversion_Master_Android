@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BMI_Calculator"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:id="@+id/male"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="18dp"
+            app:cardElevation="15dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="5dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:lottie_rawRes="@raw/male_lottie"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                android:id="@+id/male_lottie" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:id="@+id/female"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="18dp"
+            app:cardElevation="15dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="5dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:lottie_rawRes="@raw/female_lottie"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                android:id="@+id/female_lottie"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="2"
+        android:weightSum="2.6"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="0px"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:text="Height"
+            android:padding="8dp"
+            android:background="@drawable/bg_head"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="30sp"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="0px"
+           android:layout_weight="0.75"
+           android:weightSum="3"
+           android:orientation="horizontal"
+           android:gravity="center">
+        <ImageView
+            android:layout_width="0px"
+            android:id="@+id/male_pic"
+            android:layout_weight="0.75"
+            android:layout_height="130dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/male_pic" />
+
+           <LinearLayout
+               android:layout_width="0px"
+               android:layout_height="match_parent"
+               android:layout_weight="2.25"
+               android:gravity="center">
+
+
+
+                   <RadioGroup
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/height_select">
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Feet"
+                   android:id="@+id/height_btn1"
+                   android:focusedByDefault="true"
+                   />
+
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Centimetres"
+                   android:id="@+id/height_btn2"
+                   />
+                   </RadioGroup>
+
+               <EditText
+                   android:layout_margin="10dp"
+                   android:layout_width="120dp"
+                   android:layout_height="60dp"
+                   android:hint="Enter Value"
+                   android:inputType="number|numberDecimal"
+                   android:textAlignment="center"
+                   android:id="@+id/height_input"/>
+
+
+
+
+
+           </LinearLayout>
+
+
+
+
+
+
+       </LinearLayout>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="0px"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:text="Weight"
+            android:layout_margin="10dp"
+            android:padding="8dp"
+            android:background="@drawable/bg_head"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="30sp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="0.75"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="0px"
+                android:id="@+id/weight_pic"
+                android:layout_weight="0.75"
+                android:layout_height="130dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/wm"/>
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="2.25"
+                android:gravity="center">
+
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/weight_select"
+                        >
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kilogram"
+                            android:id="@+id/weight_btn1"
+                            android:focusedByDefault="true"
+                            />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pound"
+                            android:id="@+id/weight_btn2"
+                            />
+                    </RadioGroup>
+
+
+                <EditText
+                    android:layout_margin="20dp"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:hint="Enter Value"
+                    android:inputType="number|numberDecimal"
+                    android:textAlignment="center"
+                    android:id="@+id/weight_input"/>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="0.5"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:text="Calculate"
+                android:textSize="20sp"
+                android:backgroundTint="@color/btn"
+                android:id="@+id/convert_btn"/>
+
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+</LinearLayout>

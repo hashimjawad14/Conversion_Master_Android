@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:weightSum="6"
+    android:gravity="center">
+
+   <TextView
+       android:layout_width="300dp"
+       android:layout_height="0px"
+       android:gravity="center"
+       android:layout_weight="0.75"
+       android:layout_marginTop="40dp"
+       android:layout_marginBottom="20dp"
+       android:text="Conversion Master"
+       android:textColor="@color/theme"
+       android:textSize="27sp"
+       android:textStyle="bold"
+
+       android:background="@drawable/rounded_corners"
+       />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="5.25"
+        android:padding="10dp"
+        android:weightSum="4.5"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_margin="4.5dp"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="80dp"
+                    android:id="@+id/frienship"
+                    android:layout_height="0px"
+                    android:layout_weight="3"
+                    android:outlineSpotShadowColor="@color/white"
+                    app:cardBackgroundColor="@color/white"
+                    android:elevation="40dp"
+                    app:cardCornerRadius="25dp"
+                    android:layout_gravity="center"
+                    >
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/friendship"
+                       android:layout_gravity="center"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="Friendship Calculator"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="4.5dp"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="0px"
+                    android:layout_weight="3"
+                    android:outlineSpotShadowColor="@color/white"
+                    app:cardBackgroundColor="@color/white"
+                    android:elevation="40dp"
+                    app:cardCornerRadius="25dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/Currency"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/currency_converter"
+                        android:layout_gravity="center"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="Currency Converter"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="4.5dp"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="0px"
+                    android:layout_weight="3"
+                    android:outlineSpotShadowColor="@color/white"
+                    app:cardBackgroundColor="@color/white"
+                    android:elevation="40dp"
+                    app:cardCornerRadius="25dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/temperature"
+                    >
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/temp_converter"
+                        android:layout_gravity="center"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="Temperature Converter"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_margin="4.5dp"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="0px"
+                    android:layout_weight="3"
+                    android:outlineSpotShadowColor="@color/white"
+                    app:cardBackgroundColor="@color/white"
+                    android:elevation="40dp"
+                    app:cardCornerRadius="25dp"
+                    android:id="@+id/bmi"
+                    android:layout_gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bmi"
+                        android:layout_margin="8dp"
+                        android:layout_gravity="center"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="BMI Calculator"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="4.5dp"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="0px"
+                    android:layout_weight="3"
+                    android:outlineSpotShadowColor="@color/white"
+                    app:cardBackgroundColor="@color/white"
+                    android:elevation="40dp"
+                    app:cardCornerRadius="25dp"
+                    android:id="@+id/length"
+                    android:layout_gravity="center"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/length"
+                        android:layout_gravity="center"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="Length Converter"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="4.5dp"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="0px"
+                    android:layout_weight="3"
+                    android:outlineSpotShadowColor="@color/white"
+                    app:cardBackgroundColor="@color/white"
+                    android:elevation="40dp"
+                    app:cardCornerRadius="25dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/area"
+                    >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/area"
+                        android:layout_gravity="center"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="Area Converter"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_margin="4.5dp"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="0px"
+                    android:layout_weight="3"
+                    android:outlineSpotShadowColor="@color/white"
+                    app:cardBackgroundColor="@color/white"
+                    android:elevation="40dp"
+                    app:cardCornerRadius="25dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/volume"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/volume"
+                        android:layout_gravity="center"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="Volume Converter"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="4.5dp"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="0px"
+                    android:layout_weight="3"
+                    android:outlineSpotShadowColor="@color/white"
+                    app:cardBackgroundColor="@color/white"
+                    android:elevation="40dp"
+                    app:cardCornerRadius="25dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/weight"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/weight"
+                        android:layout_gravity="center"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="Weight Converter"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="4.5dp"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="0px"
+                    android:layout_weight="3"
+                    android:outlineSpotShadowColor="@color/white"
+                    app:cardBackgroundColor="@color/white"
+                    android:elevation="40dp"
+                    app:cardCornerRadius="25dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/timezone"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/timezone"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="Time Zone Converter"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:weightSum="3"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_margin="4.5dp"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="0px"
+                    android:layout_weight="3"
+                    android:outlineSpotShadowColor="@color/white"
+                    app:cardBackgroundColor="@color/white"
+                    android:elevation="40dp"
+                    app:cardCornerRadius="25dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/time"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/time"
+                        android:layout_gravity="center"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="Time Converter"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="4.5dp"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="0px"
+                    android:layout_weight="3"
+                    android:outlineSpotShadowColor="@color/white"
+                    app:cardBackgroundColor="@color/white"
+                    android:elevation="40dp"
+                    app:cardCornerRadius="25dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/age"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/age"
+                        android:layout_gravity="center"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="Age Calculator"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

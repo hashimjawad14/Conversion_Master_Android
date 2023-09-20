@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Friendship_Calculator"
+    android:background="@drawable/friendship_gradient"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="390dp"
+            android:layout_height="380dp"
+            android:background="@drawable/friend_circle"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" >
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="370dp"
+                android:layout_height="match_parent"
+                app:lottie_rawRes="@raw/friendship_anim"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true">
+
+            </com.airbnb.lottie.LottieAnimationView>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How Good Your Friendship Is?"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:text="Check your frienship percentage by your and your friend's name"
+        android:textSize="22sp"
+        android:padding="5dp"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:id="@+id/next"
+        android:src="@drawable/next_yellow"/>
+
+
+
+</LinearLayout>
